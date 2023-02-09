@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <style>
+        h1{
+            padding-bottom: 5px;
+            border-bottom: 3px solid rgb(75, 70, 70);
+            border-top: 3px solid rgb(75, 70, 70);
+        }
+        p{
+            padding: 10px;
+            border: 3px dotted blue;
+        }
+        #round{
+            border-radius: 25px;
+        }
+        #circle{
+            border-radius: 50%;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            border: 2px solid slateblue;
+            display: inline-block;
+        }
+        #round1{ border-radius: 20px; }
+        #round2{ border-bottom-right-radius: 50% 30%; }
+        #round3{ border-top-left-radius: 20px; }
+        #round4{ border-bottom-left-radius: 20px; }
+    </style>
+</head>
+<body>
+    <h1>박스 모델</h1>
+    <p>박스 모델은 실제 콘텐츠 영역, 박스와 콘텐츠 영역 사이의 여백인 패딩(padding),
+        박스의 테두리(border), 그리고 여러 박스 모델 간의 여백인 마진(margin) 등의 요소로 구성됩니다.</p>
+<hr>
+        <img src="images/cat.jpg">
+        <img id="round" src="images/cat.jpg"><br>
+        <img src="images/photo.jpg">
+        <img id="circle" src="images/photo.jpg">
+<hr>
+    <div id="round1">round1</div>
+    <div id="round2">round2</div>
+    <div id="round3">round3</div>
+    <div id="round4">round4</div>
+</body>
+</html>
