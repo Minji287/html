@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text 효과</title>
+    <style>
+        h1, p{
+            font-size: 25px;
+        }
+        .shadow1{
+            color: red;
+            text-shadow: 1px 1px black; /* 가로, 세로 거리, 색상 지정*/
+        }
+        .shadow2{
+            text-shadow: 5px 5px 3px #ffa500; /* 가로, 세로 거리, 번짐 정도, 색상 지정*/
+        }
+        .shadow3{
+            color: #fff;
+            text-shadow: 7px -7px 20px #000; /* 가로, 세로 거리, 번짐 정도, 색상 지정*/
+        }
+        .trans1{
+            text-transform: capitalize;
+        }
+        .trans2{
+            text-transform: uppercase;
+        }
+        .trans3{
+            text-transform: lowercase;
+        }
+        .spacing1{
+            letter-spacing: 0.2em;
+        }
+        .spacing2{
+            letter-spacing: 0.5em;
+        }
+        .spacing3{
+            word-spacing: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="shadow1">HTML</h1>
+    <h1 class="shadow2">CSS</h2>
+    <h1 class="shadow3">자바스크립트</h3>
+        <br>
+    <p class="trans1">html</p>
+    <p class="trans2">css</p>
+    <p class="trans3">JAVASCRIPT</p>
+        <br>
+    <p>CSS</p>
+    <p class="spacing1">CSS</p>
+    <p class="spacing2">CSS</p>
+    <p class="spacing3">css html javascript</p>
+</body>
+</html>
