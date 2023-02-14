@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 요소의 위치 지정하기</title>
+    <style>
+        p{
+            width: 500px;
+            height: 200px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            line-height: 2;
+        }
+        #static{ position: static; }
+        #relative-1{ position: relative; }
+        #relative-2{ /* 전에 배치되었던 것 기준 */
+            position: relative;
+            left: 100px;
+            top: -50px;
+        }
+        #fixed{
+            width: 100px;
+            height: 100px;
+            background-color: #222;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="static">static 나무는 흔히 지구에서 가장 거대한 단일 생명체라고 알려져 있다. 일견 가장 큰 단일 생명체라는 Armillaria ostoyae라는 버섯은 단일 개체인지 불분명하거니와 무게는 605톤 정도밖에 안 되는 것으로 추정된다. 거대한 나무로 손꼽히는 미국의 제너럴 셔먼 나무의 키는 현재 83.8m, 추정 무게는 1938년 당시 1,910톤에 달한다.[1] 심지어 이 나무는 2200년을 살았다고 한다.</p>
+    <p id="relative-1">relative-1 나무는 흔히 지구에서 가장 거대한 단일 생명체라고 알려져 있다. 일견 가장 큰 단일 생명체라는 Armillaria ostoyae라는 버섯은 단일 개체인지 불분명하거니와 무게는 605톤 정도밖에 안 되는 것으로 추정된다. 거대한 나무로 손꼽히는 미국의 제너럴 셔먼 나무의 키는 현재 83.8m, 추정 무게는 1938년 당시 1,910톤에 달한다.[1] 심지어 이 나무는 2200년을 살았다고 한다.</p>
+    <p id="relative-2">relative-2 나무는 흔히 지구에서 가장 거대한 단일 생명체라고 알려져 있다. 일견 가장 큰 단일 생명체라는 Armillaria ostoyae라는 버섯은 단일 개체인지 불분명하거니와 무게는 605톤 정도밖에 안 되는 것으로 추정된다. 거대한 나무로 손꼽히는 미국의 제너럴 셔먼 나무의 키는 현재 83.8m, 추정 무게는 1938년 당시 1,910톤에 달한다.[1] 심지어 이 나무는 2200년을 살았다고 한다.</p>
+    <p id="fixed">fixed</p>
+</body>
+</html>
