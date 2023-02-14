@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그라데이션 효과</title>
+    <style>
+        div{
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .grad{
+            background: blue;
+            background: linear-gradient(to right bottom, blue, white);
+        }
+        .grad1{
+            background: blue;
+            background: linear-gradient(250deg, rgb(167, 0, 0), rgb(104, 51, 139));
+        }
+        .grad2{
+            background: blue;
+            background: linear-gradient(to bottom, orange, yellow 90%, lightgreen);
+        }
+        .grad3{
+            background: red;
+            background: radial-gradient(white, yellow, red);
+        }
+        .grad4{
+            background: red;
+            background: radial-gradient(circle, white, yellow, red);
+        }
+        .grad5{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: blue;
+            background: radial-gradient(circle at 20% 20%, white,blue);
+            box-shadow: 10px 5px 10px #ccc;
+        }
+        .grad6{
+            background: skyblue;
+            background: radial-gradient(yellow, white, orange);
+        }
+        .grad7{
+            background: skyblue;
+            background: radial-gradient(yellow, white 10%, orange 60%);
+        }
+        .grad8{
+            border: 1px solid black;
+            background: yellowgreen;
+            background: repeating-linear-gradient(yellow, black 20px);
+        }
+        .grad9{
+            border: 1px solid black;
+            background: yellowgreen;
+            background: repeating-radial-gradient(circle, rgb(98, 129, 158), yellowgreen 10%);
+        }
+        .grad10{
+            border: 1px solid black;
+            background: yellowgreen;
+            background: repeating-linear-gradient(yellow, yellow 20px, rgb(0, 0, 0) 20px, rgb(0, 0, 0) 40px);
+        }
+        .grad11{
+            border: 1px solid black;
+            background: red;
+            background: repeating-radial-gradient(circle, white, white 10%, rgb(73, 69, 128) 10%, rgb(73, 69, 128) 20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+    <div class="grad5"></div>
+    <div class="grad6"></div>
+    <div class="grad7"></div>
+    <div class="grad8"></div>
+    <div class="grad9"></div>
+    <div class="grad10"></div>
+    <div class="grad11"></div>
+    
+</body>
+</html>
