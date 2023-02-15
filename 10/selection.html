@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 고급선택자</title>
+    <style>
+        /* section > p{ color: blue; } '>' 자식 선택자, '+' 인접 형제 선택자, '~' 형제 선택자(모두 선택) */
+        h1 + p{
+            background-color: #222;
+            color: #fff;
+        }
+        p{
+            width: 400px;
+            padding: 10px;
+            border: 1px lightsteelblue solid;
+        }
+        div li{
+            list-style: none;
+            display: inline-block;
+        }
+        div a[href]{
+            /* background: yellow; */
+            /* border: 1px solid #ccc; */
+            font-weight: normal;
+            text-decoration: none;
+            padding: 5px;
+            margin: 20px;
+            color: blue;
+        }
+        .flat{
+            background: #eee;
+            border: 1px solid #222;
+        }
+        a[class ~= "button"]{ /* '~=' a 클래스 밑에 버튼이 들어가 있는 것 모두 */
+            box-shadow: rgb(138, 138, 138) 4px 4px;
+            border-radius: 5px;
+            border: 1px solid #222;
+        }
+        a[target = _blank]{
+            padding-right: 30px;
+            background: url('images/newwindow.png') no-repeat center right;
+        }
+        #menu{
+            width: 550px;
+            border: 1px solid lightsteelblue;
+        }
+        a[href *= w3]{ /* 속성값 중 일부에 w3가 있는 a 요소를 찾는 선택자 */
+            background: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>예약 방법 & 사용 요금</h1>
+        <p style="line-height: 200%;">아직 온라인 예약 신청이 준비되지 않았습니다. <br>전화(xxx-xxxx-xxxx)로 문의하시기 바랍니다.</p>
+        <div>
+            <p>가족실(2~4인) : 60,000원/일</p>
+            <p>도미토리(4인 공용) 25,000원/일</p>
+        </div>
+    </section>
+    <div id = "menu">
+        <ul>
+            <li><a><b>메인 메뉴 : </b></a></li>
+            <li><a href="#" class="flat">메뉴 1</a></li>
+            <li><a href="#" class="flat">메뉴 2</a></li>
+            <li><a href="#" class="button">메뉴 3</a></li>
+            <li><a href="#" class="flat button">메뉴 4</a></li>
+        </ul>
+    </div>
+    <ul>
+        <li><a href="https://html.spec.whatwg.org" target="_blank">HTML 표준안 사이트</a></li>
+        <li><a href="https://www.caniuse.com/">HTML 지원 여부 체크</a></li>
+        <li><a href="https://www.w3.org/TR/css3-mediaqueries">미디어쿼리</a></li>
+    </ul>
+</body>
+</html>

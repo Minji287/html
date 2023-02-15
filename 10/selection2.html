@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스와 가상 요소</title>
+    <style>
+        .container {
+            width: 960px;
+            margin : 0 auto;
+        }
+        .navi{
+            width:960px;
+            height:60px;
+            padding-bottom:10px;
+            border-bottom: 2px solid #ccc;
+        }
+        .navi ul li{
+            float: left;
+            width: 150px;
+            padding: 10px;
+            list-style: none;
+        }
+        .navi a:link, .navi a:visited{
+            display: block;
+            font-size: 14px;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navi a:hover, .navi a:focus{
+            background-color: #222;
+            color: #fff;
+        }
+        .navi a:active{
+            background-color: #f00;
+        }
+        #intro:target{
+            background: #0069e0;
+            color: #fff;
+        }
+        #room:target{
+            background: #ff9844;
+            color: #fff;
+        }
+        #reservation:target{
+            background: #9e9057;
+            color: #fff;
+        }
+        .contents{
+            margin: 30px auto;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <ul>
+            <li><a href="#intro">이용 안내</a></li>
+            <li><a href="#room">객실 소개</a></li>
+            <li><a href="#reservation">예약 방법 및 요금</a></li>
+            <li><a href="#ps-2.html">예약하기</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <div id="intro" class="contents">
+            <h2>이용 안내</h2>
+            <p> 22시 이후 체크인 예정일 경우 프론트 연락 부탁드립니다.
+                체크아웃: 퇴실 연장 시 30분당 5천원의 추가요금이 부여됩니다.
+                16시 이후 퇴실 시 1박 요금이 적용됩니다.
+            </p>
+        </div>
+        <div id="room" class="contents">
+            <h2>객실 소개</h2>
+            <p>비즈니스 고객 또는 여행객을 포함한 다양한 고객층이 만족할 수 있는 맞춤형 공간을 제공합니다.
+                효율적인 공간구성과 포근함과 안락함을 주는 인테리어로 완성된 룸.
+                고객님께 내 집과 같은 편안함을 드리기 위한 마음이 담긴 공간입니다.
+            </p>
+        </div>
+        <div id="reservation" class="contents">
+            <h2>예약 및 요금</h2>
+            <p>예약은 3주 전부터 가능하며 객실로 100% 입금시에만 예약 확정됩니다.
+                입금이 되지 않을 경우 취소될 수 있으며, 입금자명은 반드시 예약자명과 동일해야 합니다.
+            </p>
+        </div>
+    </nav>
+</body>
+</html>
