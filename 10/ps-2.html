@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택된 라디오 버튼의 스타일 적용하기</title>
+    <style>
+        #signup input:checked + label{ /* input 요소에 checked 속성이 추가되었을 때 label 요소의 스타일 */
+            color: red;
+            font-weight: bold;
+        }
+        #signup{
+            background: #fff;
+            border: 1px solid #222;
+            border-radius: 5px;
+            padding: 20px;
+            width: 400px;
+            margin: 30px auto;
+        }
+        #signup fieldset{
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+        }
+        #signup legend{
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-bottom: 10px;
+        }
+        #signup ul li{
+            line-height: 30px;
+            list-style: none;
+            padding: 5px 10px;
+            margin-bottom: 2px;
+        }
+        #signup label{
+            font-size: 13px;
+            width: 110px;
+        }
+        #signup button{
+            display: block;
+            font-size: 16px;
+            margin: auto;
+            padding: 5px 25px;
+            border: 1px solid #222;
+            border-radius: 20px
+        }
+        #signup input:not([type=radio]){
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form id="signup">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="phone">연락처</label>
+                    <input type="tel" name="phone" id="phone">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>객실 형태</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="room" id="basic">
+                    <label for="basic">기본형(최대 2인)</label>
+                </li>
+                <li>
+                    <input type="radio" name="room" id="family">
+                    <label for="family">가족형(최대 8인)</label>
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">제출</button>
+    </form>
+</body>
+</html>
