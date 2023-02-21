@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 알아보기</title>
+</head>
+<body>
+    <script>
+        var userNumber = prompt("성적을 입력하세요.");
+        userNumber = parseInt(userNumber / 10);
+
+        switch(userNumber){
+            case 9: case 10: document.write("A 입니다");
+            break;
+            case 8: document.write("B 입니다");
+            break;
+            case 7: document.write("C 입니다");
+            break;
+            case 6: document.write("D 입니다");
+            break;
+            case 5: document.write("F 입니다");
+            break;
+            default: document.write("잘못 입력하셨습니다.");
+        }
+
+        // var session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+
+        // switch(session){
+        //     case "1": document.write("<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.</p>")
+        //     break;
+        //     case "2": document.write("<p>개발 세션은 <strong>203호</strong>에서 진행됩니다.</p>")
+        //     break;
+        //     case "3": document.write("<p>디자인 세션은 <strong>205호</strong>에서 진행됩니다.</p>")
+        //     break;
+        //     default: alert("잘못 입력했습니다.");
+        // }
+        // session = parseInt(session);
+        // document.write(typeof session);
+
+        // var userNumber = prompt("성적을 입력하세요.");
+        // if(userNumber != null){
+        //     if(userNumber > 89){
+        //         alert("A 입니다");
+        //     }else if(userNumber > 79){
+        //         alert("B 입니다");
+        //     }else if(userNumber > 69){
+        //         alert("C 입니다");
+        //     }else if(userNumber > 59){
+        //         alert("D 입니다");
+        //     }else{
+        //         alert("F 입니다");
+        //     }
+        // }else{
+        //     alert("입력이 취소되었습니다.");
+        // }
+
+        // var userNumber = prompt("숫자를 입력하세요.");
+        // if(userNumber != null){
+        //     (userNumber % 3 === 0) ? alert("3의 배수 입니다.") : alert("3의 배수가 아닙니다.");
+        //     }
+        // else{
+        //     alert("입력이 취소되었습니다.");
+        // }
+    </script>
+</body>
+</html>
