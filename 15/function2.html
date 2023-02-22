@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수2</title>
+</head>
+<body>
+    <script>
+        var sum = function(a,b){
+            return a+b;
+        }
+        document.write("함수 실행 결과: " + sum(10, 20));
+        
+        
+        function calSum(n1, n2){
+            var sum = 0;
+            for(let i = n1; i <= n2; i++){
+                sum += i;
+            }
+            document.write(n1 + "부터 " + n2 + "까지 더하면 " + sum);
+        }
+        
+        
+        // var num1 = prompt("어디서부터 더할까요?");
+        // var num2 = prompt("얼마까지 더할까요?");
+        // if(num1 != null && num2 != null){
+        //     calSum(parseInt(num1), parseInt(num2));
+        // }
+    </script>
+</body>
+</html>  

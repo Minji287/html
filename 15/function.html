@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        // var a = parseInt(prompt("첫번째 숫자를 입력해주세요."))
+        // var b = parseInt(prompt("두번째 숫자를 입력해주세요."))
+        var sum = 0;
+
+        function add(a, b){    
+            var sum = a + b;
+            document.write(a + " + " + b + " = " + sum + "<br>");
+        }
+        function sub(a, b){    
+            var sum = a - b;
+            document.write(a + " - " + b + " = " + sum + "<br>");
+        }
+        function mul(a, b){    
+            var sum = a * b;
+            document.write(a + " * " + b + " = " + sum + "<br>");
+        }
+        function div(a, b){    
+            var sum = a / b;
+            document.write(a + " / " + b + " = " + sum + "<br>");
+        }
+        
+        add(100, 200);
+        // sub(100, 200);
+        // mul(100, 200);
+        // div(100, 200);
+
+        function calculate(a, b, op){
+            switch(op){
+                case '+': document.write(a + " + " + b + " = " + (a+b) + "<br>");
+                break;
+                case '-': document.write(a + " - " + b + " = " + (a-b) + "<br>");
+                break;
+                case '/': document.write(a + " / " + b + " = " + (a/b) + "<br>");
+                break;
+                case '*': document.write(a + " * " + b + " = " + (a*b) + "<br>");
+                break;
+                default: document.write("연산자를 잘못 입력했습니다.");
+            }
+        }
+
+        // calculate(100,200,'+');
+        // calculate(100,200,'-');
+        // calculate(100,200,'/');
+        // calculate(100,200,'*');
+    </script>
+</body>
+</html>
