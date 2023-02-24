@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 모델(DOM)3</title>
+</head>
+    <style>
+        
+    </style>
+<body>
+    <img src="images/easys-1.jpg" id="cup">
+    <script>
+        var cup = document.querySelector('#cup');
+        // cup.onclick = function(e){
+        //     alert("클릭한 이미지 파일: " + this.src);
+        // }
+
+        cup.addEventListener("mouseover", changePic);
+        cup.addEventListener("mouseout", originPic);
+        function changePic(){
+            cup.src="images/easys-1.jpg";
+        }
+        function originPic(){
+            cup.src="images/easys-2.jpg";
+        }
+    </script>
+    
+</body>
+</html>

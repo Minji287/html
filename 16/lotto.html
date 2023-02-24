@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>당첨자 발표</title>
+    <style>
+      h1 {
+        border:1px solid black;
+        padding:10px;
+        text-align:center;
+        background:#eee;
+      }
+    </style>
+  </head>
+  <body>    
+    <h1>로또 프로그램</h1>
+    <script>
+      var lottos = new Array(6);
+      
+      for(let i = 0; i < 6; i++){
+        lottos[i] = Math.floor(Math.random()*45 + 1);
+        // 로또 번호가 중복됐는지 확인 하는 반복문
+        for(let j = 0; j < i; j++){
+          if(lottos[i] === lottos[j]){
+            i--;
+          }
+        }
+      }
+      lottos.sort(function(a,b) { return a-b; }) // 오름차순
+      document.write("이번주 로또 번호: ");
+      for(let i = 0; i < 6; i++){
+        document.write(lottos[i] + ", ");
+      }
+    </script>
+  </body>
+</html>

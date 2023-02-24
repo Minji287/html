@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+    <style>
+        /* body{
+            text-align: center;
+            font-size: 1.5em;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <h3>배열의 각 요소</h3> -->
+    <script>
+        // var now = new Date();
+        // document.write("현재 시간은 : " + now.toLocaleString());
+
+        // var numbers = [ "one", "two", "three", "four" ];
+        // for(i = 0; i < numbers.length; i++){
+        //     document.write("<p>" + numbers[i] + "</p>")
+        // }
+
+        var nums = [1,2,3,4,5];
+        var chars = ["a","b","c","d","e"];
+        var newNums = nums.slice(2,4);
+        document.write("반환된 배열 : " + newNums + "<br>");
+        document.write("변경된 배열 : " + nums + "<br>");
+
+        // var popped1 = chars.pop();
+        // document.write("꺼낸 요소: ", popped1, " | 배열: ", chars);
+        // document.write("<br>");
+        // var popped2 = chars.shift();
+        // document.write("꺼낸 요소: ", popped2, " | 배열: ", chars);
+
+        // var string1 = nums.join();
+        // var ret1 = nums.push(4, 5);
+        // document.write("length: " + ret1 + " 배열: " + nums);
+        // var ret2 = nums.unshift(0);
+        // document.write("<br>length: " + ret2 + " 배열: " + nums);
+
+        // document.write("구분자 없이 : " + string1 + "<br>");
+        // var string2 = chars.join('/');
+        // document.write("구분자 지정 : " + string2 + "<br>")
+
+        // var numsChars = nums.concat(chars);
+        // var charsNums = chars.concat(nums);
+        // document.write("<br>nums에 chars를 합치면 : ", numsChars,
+        //             "<br>chars에 nums를 합치면 : ", charsNums);
+        // document.write("<hr>");
+    </script>
+</body>
