@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 화면설계</title>
+    <style>
+        table{
+            margin: 100px auto;
+
+        }
+        #logo{
+            width: 100px;
+            line-height: 90px;
+            text-align: center;
+            padding: 10px auto;
+        }
+        #login{
+            border: 1px solid #222;
+            width: 100px;
+            line-height: 90px;
+            text-align: center;
+            padding: 10px auto;
+            background-color: white;
+        }
+        #id, #pass{
+            width: 100px;
+            line-height: 30px;
+            text-align: center;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td rowspan="3">
+                <div id="logo">LOGO</div></td>
+            <td><div id="id"><input type="text" placeholder="아이디"></div></td>
+            <td rowspan="3"><div id="login">로그인</div></td>
+        </tr>
+        <tr>
+            <td><div id="pass"><input type="password" placeholder="패스워드"></div></td>
+        </tr>
+        <tr>
+            <td><div id="pass2"><input type="password" placeholder="패스워드확인"></div></td>
+        </tr>
+    </table>
+</body>
+</html>
