@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function passwordCheck(){
+            if(document.querySelector('#password1').value == document.querySelector('#password2').value){
+                alert("비밀번호가 일치합니다.");
+            }
+            else{
+                alert("비밀번호가 일치하지 않습니다.");
+            }
+        }
+        function validity(){
+            if(document.querySelector('#user-id').value == "" ||
+                document.querySelector('#name').value == "" ||
+                document.querySelector('#password1').value == "" ||
+                document.querySelector('#password2').value == ""){
+                    alert("필수 입력란이 비었습니다. 확인해 주세요.");
+                }else{
+                    alert("필수 입력란을 모두 입력하였습니다.");
+                }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>학교소개</li>
+            <li>과정소개</li>
+            <li>취업지원</li>
+            <li>회원가입</li>
+        </ul>
+    </header>
+    <nav>
+        <article>
+            <h3>NAVER</h3>
+            <p>대한민국 1등 웹 포털</p><hr>
+        </article>
+        <article>
+            <h3>GOOGLE</h3>
+            <p>전세계 1등 웹 포털</p><hr>
+        </article>
+        <article>
+            <h3>DAUM</h3>
+            <p>대한민국 2등 웹 포털</p><hr>
+        </article>
+    </nav>
+<section>
+    <form name="signup" method="post" action="">
+        <caption><h2>회원 가입</h2></caption>
+        <table>
+            <tr>
+                <td>아이디 *</td>
+                <td><input type="text" id="user-id">
+                <input type="button" value="중복확인"></td>
+            </tr>
+            <tr>
+                <td>이름 *</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td><input type="radio" name="gender" id="male" checked>남
+                    <input type="radio" name="gender" id="female">여</td>
+            </tr>
+            <tr>
+                <td>암호 *</td>
+                <td><input type="password" id="password1"></td>
+            </tr>
+            <tr>
+                <td>암호확인 *</td>
+                <td><input type="password" id="password2">* 같은 암호를 입력하세요
+                    <input type="button" value="비밀번호확인" onclick="passwordCheck()"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>주소</td>
+                <td><input type="text" id="address">
+                    <input type="button" value="주소찾기"></td>
+            </tr>
+            <tr>
+                <td>휴대폰</td>
+                <td><input type="radio" name="carrage" id="skt">SKT
+                    <input type="radio" name="carrage" id="lg">LGU+
+                    <input type="radio" name="carrage" id="kt">KT
+                    <br>
+                    <select name="phone1">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option></select>
+                    <input type="text" size="4" maxlength="4" id="phone2"> -
+                    <input type="text" size="4" maxlength="4" id="phone3">
+                </td>
+            </tr>
+            <tr>
+                <td>관심분야</td>
+                <td><input type="checkbox" id="interest" name="sports">스포츠
+                    <input type="checkbox" id="interest" name="shopping">쇼핑
+                    <input type="checkbox" id="interest" name="book">독서
+                    <input type="checkbox" id="interest" name="programming">프로그래밍
+                    <input type="checkbox" id="interest" name="travel">여행
+                    <input type="checkbox" id="interest" name="etc">기타</td>
+            </tr>
+            <tr>
+                <td>자기소개</td>
+                <td><textarea></textarea></td>
+            </tr>
+        </table>
+        <input type="button" value="유효성검사" onclick="validity()">
+        <input type="submit" value="확인">
+        <input type="reset" value="다시입력">
+    </form>
+    <aside>
+        <a href="https://www.samsung.com/sec/">
+            <img src="https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg" alt="samsung"></a>
+        <a href="https://www.ici.ac/html/">
+            <img src="https://www.ici.ac/images/layout/logo.gif"></a>
+    </aside>
+</section>
+    <footer>
+        <p>인천광역시 미추홀구 주안로 108 (주안동,경향프라자)13층 1302호 <br>
+            상담전화 : 032-256-1000 팩스 : 032-256-2828 이메일 : inta1977@naver.com <br>
+            Copyright (c) By 2015 인천직업능력개발원. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
